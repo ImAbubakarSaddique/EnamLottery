@@ -77,6 +77,7 @@
                 android:layout_marginRight="4dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userEmail_ed"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableLeft="@drawable/ic_email"
@@ -94,6 +95,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userPassword_ed"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableStart="@drawable/ic_password"
@@ -103,12 +105,14 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continue_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="8dp"
                 android:text="Continue"
+                android:onClick="HomeScreen"
                 android:background="@drawable/button_background"
                 android:textColor="@color/white"
                 android:textAllCaps="true"
@@ -129,10 +133,12 @@
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/registerNow_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Register Now"
+                    android:onClick="RegisterScreen"
                     android:textColor="@color/primary"
                     android:textStyle="bold" />
 

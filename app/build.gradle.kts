@@ -41,8 +41,12 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //Country Picker Github
-    implementation ("com.github.EhsanMashhadi:CountryPicker:0.4.0")
+    implementation("com.github.EhsanMashhadi:CountryPicker:0.4.0")
 
     //Bottom Navigation Menu Github
-    implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+    implementation("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+
+    implementation("com.squareup.retrofit2:retrofit:2.7.2")
+    implementation("com.squareup.retrofit2:converter-gson:2.7.2")
+    implementation("com.squareup.okhttp3:okhttp:3.6.02")
 }

@@ -11,165 +11,215 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
-        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="60dp"
         app:cardBackgroundColor="@color/transparent_white"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="8dp"
-            android:paddingTop="32dp"
-            android:paddingRight="8dp"
-            android:paddingBottom="32dp">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/enam_lottery_logo" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Welcome to "
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/black" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Enam"
-                    android:textColor="@color/primary"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Lottery"
-                    android:textColor="@color/secondary"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Register to continue"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/black" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="4dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/ic_name"
-                    android:drawablePadding="8dp"
-                    android:hint="Name"
-                    android:textColor="@color/secondary" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginRight="4dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/ic_country"
-                    android:drawablePadding="8dp"
-                    android:hint="Country"
-                    android:textColor="@color/secondary" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginRight="4dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/ic_email"
-                    android:drawablePadding="8dp"
-                    android:hint="Email"
-                    android:textColor="@color/secondary" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginRight="4dp"
-                app:passwordToggleEnabled="true">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableStart="@drawable/ic_password"
-                    android:drawablePadding="8dp"
-                    android:hint="Password"
-                    android:textColor="@color/secondary" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="8dp"
-                android:text="Continue"
-                android:background="@drawable/button_background"
-                android:textColor="@color/white"
-                android:textAllCaps="true"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="32dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="32dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/enam_lottery_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome to "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enam"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/primary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Lottery"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/secondary" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Already have an account? "
+                    android:layout_marginTop="4dp"
+                    android:text="Register to continue"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="4dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserName_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="8dp"
+                        android:hint="Name"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="4dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserAge_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="8dp"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="4dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserPhoneNumber_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:drawablePadding="8dp"
+                        android:hint="Phone Number"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserCountry_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:drawablePadding="8dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Country"
+                        android:onClick="launchCountryCode"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserEmail_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawablePadding="8dp"
+                        android:hint="Email"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    app:passwordToggleEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerUserPassword_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableStart="@drawable/ic_password"
+                        android:drawablePadding="8dp"
+                        android:hint="Password"
+                        android:textColor="@color/secondary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/registerNow_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_background"
+                    android:text="Continue"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:gravity="center"
-                    android:text="Login Now"
-                    android:textColor="@color/primary"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Already have an account? "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/loginNow_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Login Now"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
-        </LinearLayout>
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
